@@ -4,7 +4,7 @@
 
 
 CREATE TABLE "categories" (
-    "category_id" varchar(5)   NOT NULL,
+    "category_id" int   NOT NULL,
     "category" varchar(25)   NOT NULL,
     CONSTRAINT "pk_categories" PRIMARY KEY (
         "category_id"
@@ -12,20 +12,10 @@ CREATE TABLE "categories" (
 );
 
 CREATE TABLE "subcategories" (
-    "subcategory_id" varchar(8)   NOT NULL,
+    "subcategory_id" int   NOT NULL,
     "subcategory" varchar(25)   NOT NULL,
     CONSTRAINT "pk_subcategories" PRIMARY KEY (
         "subcategory_id"
-     )
-);
-
-CREATE TABLE "contacts" (
-    "contact_id" int   NOT NULL,
-    "first_name" varchar(20)   NOT NULL,
-    "last_name" varchar(20)   NOT NULL,
-    "email" varchar(60)   NOT NULL,
-    CONSTRAINT "pk_contacts" PRIMARY KEY (
-        "contact_id"
      )
 );
 
@@ -42,10 +32,20 @@ CREATE TABLE "campaign" (
     "currency" varchar(3)   NOT NULL,
     "launch_date" date   NOT NULL,
     "end_date" date   NOT NULL,
-    "category_id" varchar(5)   NOT NULL,
-    "subcategory_id" varchar(8)   NOT NULL,
+    "category_id" int   NOT NULL,
+    "subcategory_id" int   NOT NULL,
     CONSTRAINT "pk_campaign" PRIMARY KEY (
         "cf_id"
+     )
+);
+
+CREATE TABLE "contacts" (
+    "contact_id" int   NOT NULL,
+    "first_name" varchar(20)   NOT NULL,
+    "last_name" varchar(20)   NOT NULL,
+    "email" varchar(60)   NOT NULL,
+    CONSTRAINT "pk_contacts" PRIMARY KEY (
+        "contact_id"
      )
 );
 
