@@ -13,8 +13,6 @@ This project simulates a real-world ETL pipeline to transform raw data into stru
 - **Data Loading**: Export transformed data into CSV files and load them into a PostgreSQL database.
 - **Database Design**: Create an ERD, define schema, and enforce relationships between tables.
 
-![ETL Process](https://media.licdn.com/dms/image/v2/D5612AQHqZ4Q6ikyjgg/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1689850164667?e=1741219200&v=beta&t=eEE6_U8v_tSvsf-HLqk5VVQuiyLNgfp6Wopmx_uZsuw)
-
 ## Technologies Used
 
 - **Python**: Data manipulation and transformation.
@@ -44,7 +42,7 @@ This project simulates a real-world ETL pipeline to transform raw data into stru
   - Assign `category_id` and `subcategory_id` based on categories.
 - **Contacts DataFrame**:
   - Extract and split contact details.
-  - Use Pandas dictionary for processing.
+  - Use either dictionary methods or regular expressions for processing.
 
 ### 3. Load
 - Export the transformed DataFrames into the following CSV files:
