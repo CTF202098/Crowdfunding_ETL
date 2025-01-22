@@ -32,7 +32,7 @@ CREATE TABLE "contacts" (
 CREATE TABLE "campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
-    "company_name" varchar(25)   NOT NULL,
+    "company_name" varchar(50)   NOT NULL,
     "description" varchar(55)   NOT NULL,
     "goal" int   NOT NULL,
     "pledged" int   NOT NULL,
